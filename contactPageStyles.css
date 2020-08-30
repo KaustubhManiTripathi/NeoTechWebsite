@@ -1,0 +1,337 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    background-image:url(images/ContactBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size:15px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #3e3e42;
+    
+}
+i{
+    color: white;
+    font-size: 24px;
+}
+
+p{
+    font-size: 2rem;
+    color: white;
+}
+h3{
+    color: white;
+}
+h1{
+    font-size: 4rem;
+    color: white;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+
+.activeLink{
+    color: white !important;
+}
+
+/*header*/
+header{
+   display: flex;
+   width: 90%;
+   margin:auto;
+   
+   
+}
+
+.container{
+    width: 100%;
+    max-width: 98rem;
+    margin:0 auto;
+    padding: 0 1.5rem;
+    
+}
+
+nav{
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid white;
+}
+.nav-item{
+    font-size: 1.5rem;
+    width:50%;
+    height:100%;
+    display:flex;
+    list-style:none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item li a{
+    text-decoration: none;
+}
+.Logo{
+    width: 20rem;
+}
+
+.nav-item li a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+.Banner-area{
+    display:flex;
+    width:90%;
+    margin: auto;
+    min-height: 50vh;
+    align-items: center;
+    border: 2px solid white;
+   
+}
+.cover img{
+    height: 20vh;
+   
+
+}
+.contact-info-holder{
+    width: 80%;
+    margin: auto;
+}
+.contact-info-holder h1, p{
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-box{
+    display: flex;
+    background:white;
+    
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding:40px 60px;
+}
+.contact-right{
+    color:white;
+    font-size: 15px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: rgb(53, 51, 51);
+    
+}
+.contact-right h1{
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+}
+.contact-info-holder p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+
+.input-group{
+    flex-basis: 45%;
+}
+input{
+    width:100%;
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 6px;
+    display:block;
+    color: black;
+    font-size: 15px;
+}
+
+button{
+    background: rgb(53, 51, 51);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px lightgrey;
+}
+
+.contact-left h1{
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 20px;
+}
+
+footer{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #222020;
+    font-family: 'Lato',sans-serif;
+}
+footer h3{
+    text-align: center;
+    margin: 5px 0;
+    font-size: 20px;
+    color: aliceblue;
+}
+footer .content{
+    display: flex;
+}
+footer .content .part-one{
+    width: 33%;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+footer .content .part-two{
+    width: 33%;
+    padding: 5px;
+    text-align: center;
+}
+footer .content .part-three{
+    width: 33%;
+    padding: 5px;
+}
+
+
+footer .content .part-two ul{
+    display: inline-block;
+    list-style: none;
+    flex-basis: auto;
+    justify-content: space-around;
+}
+footer .content .part-two ul li{
+    margin-bottom: 5px;
+}
+footer .content .part-two ul li a{
+    color: aliceblue;
+}
+
+footer .content .part-three p{
+    font-size: 16px;
+    color: aliceblue;
+}
+footer h2{
+    color: aliceblue;
+}
+footer h1{
+ color: aliceblue;;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:768px){
+
+    .line{
+        width:30px;
+        height:3px;
+        background-color: rgb(34, 33, 33);
+        margin:5px;
+    }
+    nav{
+        position: relative;
+    }
+
+    .hamburger{
+        position:absolute;
+        cursor: pointer;
+        right:5%;
+        top:50%;
+        transform: translateX(-5%);
+        transform:translateY(-50%);
+        z-index:2;
+    }
+    .nav-item{
+        position: fixed;
+        top:0;
+        left:0;
+        background-color: rgba(0,0,0,0.9);
+        width:100%;
+        flex-direction:column;
+        clip-path:circle(100px at 90% -20%);
+        -webkit-clip-path:circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+    }
+
+    .nav-item.open{
+        clip-path:circle(1100px at 90% -10%);
+        -webkit-clip-path:circle(1100px at 90% -10%);
+    }
+
+    .contact-box{
+        flex-direction: column;
+    }
+    
+     footer .content{
+        flex-direction: column;
+        width: 100%;
+    }
+    footer .content .part-one{
+        width: 100%;
+        margin: 5px 0;
+        border: none;
+        text-align: left;
+    }
+     
+     
+     footer .content .part-two{
+        width: 100%;
+        margin: 5px 0;
+        border: none;
+        text-align: left;
+    }
+     footer .content .part-three{
+        width: 100%;
+        margin: 5px 0;
+    }
+}
